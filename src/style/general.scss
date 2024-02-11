@@ -1,0 +1,63 @@
+@use "./variables" as *;
+@import '@fontsource/ubuntu/300.css';
+@import '@fontsource/ubuntu/400.css';
+@import '@fontsource/ubuntu/500.css';
+@import '@fontsource/ubuntu/700.css';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: $font;
+    color: $colorFont;
+    background-color: $colorBackground;
+    cursor: crosshair;
+}
+
+
+.contrast {
+    color: $colorContrast;
+}
+
+.high_contrast {
+    color: $colorHighContrast;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.up {
+    text-align: center;
+    margin: 2.5rem 0 1rem;
+    color: $colorFont;
+
+    &:hover {
+        color: $colorHighContrast;
+    }
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $colorFont;
+    border-radius: 4px;
+}
